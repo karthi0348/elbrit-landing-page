@@ -1,0 +1,60 @@
+
+.header {
+  background: white;
+  padding: 15px 0;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoIcon {
+  width: 35px;
+  height: 35px;
+  background: #2E5BFF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E5BFF;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  font-size: 10px;
+  color: #666;
+  margin-top: -2px;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 20px;
+  }
+  
+  .logoIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  .tagline {
+    font-size: 9px;
+  }
+}
