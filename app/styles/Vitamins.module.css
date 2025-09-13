@@ -1,6 +1,6 @@
 .vitaminsSection {
   padding: 4rem 0;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 .container {
@@ -405,7 +405,6 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  width: 400px;
   height: 265px;
   color: #17414F;
   display: inline-block;
@@ -474,7 +473,6 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  width: 400px;
   height: 265px;
   color: #17414F;
   display: inline-block;
