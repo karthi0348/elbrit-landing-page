@@ -1,6 +1,24 @@
+"use client"
+import { useEffect } from 'react';
 import styles from '../styles/Vitamins.module.css';
 
 export default function Vitamins() {
+  useEffect(() => {
+    const initAOS = async () => {
+      const AOS = (await import('aos')).default;
+      await import('aos/dist/aos.css');
+      
+      AOS.init({
+        duration: 900,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    };
+
+    initAOS();
+  }, []);
+
   const mainVitamins = [
     {
       name: "Vitamin C",
@@ -46,7 +64,11 @@ export default function Vitamins() {
     <section className={styles.vitaminsSection}>
       <div className={styles.container}>
         <div className={styles.topRow}>
-          <div className={styles.headerText}>
+          <div 
+            className={styles.headerText}
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h3 className={styles.sectionLabel}>INGREDIENTS</h3>
             <h2 className={styles.sectionTitle}>Better Ingredients</h2>
             <p className={styles.sectionDescription}>
@@ -63,6 +85,8 @@ export default function Vitamins() {
                 backgroundImage: `url(${vitamin.image})`,
                 backgroundColor: vitamin.color,
               }}
+              data-aos="fade-up"
+              data-aos-delay={400 + (index * 200)}
             >
               <div className={styles.overlay}></div>
               <div className={styles.cardContent}>
@@ -83,6 +107,8 @@ export default function Vitamins() {
                 backgroundImage: `url(${ingredient.image})`,
                 backgroundColor: ingredient.color,
               }}
+              data-aos="fade-up"
+              data-aos-delay={800 + (index * 150)}
             >
               <div className={styles.overlay}></div>
               <div className={styles.cardContent}>

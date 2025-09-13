@@ -1,11 +1,28 @@
+"use client"
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styles from "../styles/Features.module.css";
 
 export default function Features() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }, []);
+
   return (
     <section className={styles.featuresSection}>
       <div className={styles.container}>
         <div className={styles.featuresGrid}>
-          <div className={styles.featureCard}>
+          <div 
+            className={styles.featureCard}
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className={styles.featureIcon}>
               <img
                 src="/a.item-icon-e.png"
@@ -19,7 +36,11 @@ export default function Features() {
             </p>
           </div>
 
-          <div className={styles.featureCard}>
+          <div 
+            className={styles.featureCard}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className={styles.featureIcon}>
               <img
                 src="/a.item-icon-f.png"
@@ -33,7 +54,11 @@ export default function Features() {
             </p>
           </div>
 
-          <div className={styles.featureCard}>
+          <div 
+            className={styles.featureCard}
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <div className={styles.featureIcon}>
               <img
                 src="/a.item-icon-g.png"
@@ -47,7 +72,11 @@ export default function Features() {
             </p>
           </div>
 
-          <div className={styles.featureCard}>
+          <div 
+            className={styles.featureCard}
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className={styles.featureIcon}>
               <img
                 src="/a.item-icon-j.png"
@@ -59,7 +88,11 @@ export default function Features() {
             <p>We deliver to your door with no shipping costs on your orders</p>
           </div>
 
-          <div className={styles.featureCard}>
+          <div 
+            className={styles.featureCard}
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div className={styles.featureIcon}>
               <img
                 src="/a.item-icon-h.png"
@@ -73,7 +106,11 @@ export default function Features() {
             </p>
           </div>
 
-          <div className={styles.featureCard}>
+          <div 
+            className={styles.featureCard}
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <div className={styles.featureIcon}>
               <img
                 src="/a.item-icon-i.png"

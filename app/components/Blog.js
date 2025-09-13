@@ -1,7 +1,25 @@
+"use client"
+import { useEffect } from 'react';
 import styles from '../styles/Blog.module.css';
 import Image from 'next/image';
 
 export default function Blog() {
+  useEffect(() => {
+    const initAOS = async () => {
+      const AOS = (await import('aos')).default;
+      await import('aos/dist/aos.css');
+      
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    };
+
+    initAOS();
+  }, []);
+
   const blogPosts = [
     {
       id: 1,
@@ -72,15 +90,21 @@ export default function Blog() {
   return (
     <section className={styles.blogSection} id="blog">
       <div className={styles.container}>
-        <div className={styles.blogHeader}>
+        <div 
+          className={styles.blogHeader}
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <p className={styles.blogSubtitle}>OUR BLOG</p>
           <h2 className={styles.blogMainTitle}>Latest News</h2>
         </div>
         <div className={styles.blogGrid}>
-          {blogPosts.map((post) => (
+          {blogPosts.map((post, index) => (
             <article 
               key={post.id} 
               className={`${styles.blogCard} ${styles[`card${post.id}`]} ${styles[post.type]}`}
+              data-aos="fade-up"
+              data-aos-delay={400 + (index * 100)}
             >
               <div className={styles.cardBackground}>
                 <Image

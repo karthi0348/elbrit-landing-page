@@ -1,18 +1,39 @@
+"use client"
+import { useEffect } from 'react';
 import styles from "../styles/Footer.module.css";
 
-
 export default function Footer() {
+  useEffect(() => {
+    const initAOS = async () => {
+      const AOS = (await import('aos')).default;
+      await import('aos/dist/aos.css');
+      
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    };
+
+    initAOS();
+  }, []);
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.contactInfo}>
-          <div className={styles.contactCard}>
-              <div className={styles.icon}>
-                <img
-                  src="/phone.png"
-                  alt="phone"
-                  className={styles.IconImage}
-                />{" "}
+          <div 
+            className={styles.contactCard}
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div className={styles.icon}>
+              <img
+                src="/phone.png"
+                alt="phone"
+                className={styles.IconImage}
+              />{" "}
             </div>
 
             <div className={styles.contactDetails}>
@@ -21,13 +42,17 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={styles.contactCard}>
-              <div className={styles.icon}>
-                <img
-                  src="/email.png"
-                  alt="email"
-                  className={styles.IconImage}
-                />{" "}
+          <div 
+            className={styles.contactCard}
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div className={styles.icon}>
+              <img
+                src="/email.png"
+                alt="email"
+                className={styles.IconImage}
+              />{" "}
             </div>
 
             <div className={styles.contactDetails}>
@@ -36,13 +61,17 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={styles.contactCard}>
-              <div className={styles.icon}>
-                <img
-                  src="/location.png"
-                  alt="location"
-                  className={styles.IconImage}
-                />{" "}
+          <div 
+            className={styles.contactCard}
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <div className={styles.icon}>
+              <img
+                src="/location.png"
+                alt="location"
+                className={styles.IconImage}
+              />{" "}
             </div>
 
             <div className={styles.contactDetails}>
@@ -52,7 +81,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.companySection}>
+        <div 
+          className={styles.companySection}
+          data-aos="zoom-in"
+          data-aos-delay="800"
+        >
           <div className={styles.logoContainer}>
             <div className="logoSection">
               <img src="/logo.png" alt="Elbrit" className={styles.logo} />
@@ -65,7 +98,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.copyright}>
+        <div 
+          className={styles.copyright}
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
           <p>
             © Elbrit Life Sciences Private Limited. C20, BKC, G Block, Mumbai
             400051
