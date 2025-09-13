@@ -314,11 +314,11 @@
   }
 
   .bottleImage {
-    width: 260px;
-    height: 260px;
-    margin-right: 50px;
-    margin-bottom: 75px;
-    margin-top: -40px;
+    width: 200px;
+    height: 200px;
+    margin-top: -10px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   .capsule1,
@@ -363,7 +363,7 @@
 /* Mobile phones (480px and below) */
 @media (max-width: 480px) {
   .hero {
-    min-height: 1200px;
+    min-height: 500px;
     padding-top: 20px;
     padding-bottom: 60px;
   }
@@ -409,6 +409,8 @@
     width: 200px;
     height: 200px;
     margin-top: -10px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   .capsule1,
@@ -496,10 +498,12 @@
     height: 140px;
   }
 
-  .bottleImage {
+ .bottleImage {
     width: 200px;
     height: 200px;
     margin-top: -10px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   .rightContent {

@@ -221,7 +221,7 @@
 @media (max-width: 480px) {
   .featuresSection {
     padding: 30px 15px;
-    margin: -190px auto 30px auto;
+    margin: 0px auto 30px auto;
     border-radius: 35px;
     min-height: 450px;
     background: transparent;
