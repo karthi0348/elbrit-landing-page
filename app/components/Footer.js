@@ -1,7 +1,5 @@
 import styles from "../styles/Footer.module.css";
-import { MdPhone } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
-import { MdLocationOn } from "react-icons/md";
+
 
 export default function Footer() {
   return (
@@ -9,10 +7,12 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.contactInfo}>
           <div className={styles.contactCard}>
-            <div className={styles.iconContainer}>
               <div className={styles.icon}>
-                <MdPhone size={24} color="#2196f3" />
-              </div>
+                <img
+                  src="/phone.png"
+                  alt="phone"
+                  className={styles.IconImage}
+                />{" "}
             </div>
 
             <div className={styles.contactDetails}>
@@ -22,10 +22,12 @@ export default function Footer() {
           </div>
 
           <div className={styles.contactCard}>
-            <div className={styles.iconContainer}>
               <div className={styles.icon}>
-                <MdEmail size={24} color="#2196f3" />
-              </div>
+                <img
+                  src="/email.png"
+                  alt="email"
+                  className={styles.IconImage}
+                />{" "}
             </div>
 
             <div className={styles.contactDetails}>
@@ -35,10 +37,12 @@ export default function Footer() {
           </div>
 
           <div className={styles.contactCard}>
-            <div className={styles.iconContainer}>
               <div className={styles.icon}>
-                <MdLocationOn size={24} color="#2196f3" />
-              </div>
+                <img
+                  src="/location.png"
+                  alt="location"
+                  className={styles.IconImage}
+                />{" "}
             </div>
 
             <div className={styles.contactDetails}>

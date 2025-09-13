@@ -57,7 +57,9 @@
   transition: all 0.3s ease;
   color: #17414F;
 }
-
+.IconImage{
+  width:100px;
+}
 .featureIcon svg {
   width: 32px;
   height: 32px;
@@ -238,10 +240,12 @@
   }
   
   .featureIcon {
-    width: 60px;
+      width: 60px;
     height: 60px;
-    margin: 0 auto 15px auto;
+    margin: 16px auto 28px auto;
   }
+
+
   
   .featureIcon svg {
     width: 24px;

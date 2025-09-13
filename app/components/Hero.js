@@ -1,7 +1,4 @@
 import styles from "../styles/Hero.module.css";
-import { GiPill } from "react-icons/gi";
-import { GiWeightScale } from "react-icons/gi";
-import { GiCookingPot } from "react-icons/gi";
 
 export default function Hero() {
   return (
@@ -35,7 +32,11 @@ export default function Hero() {
           <div className={styles.rightContent}>
             <div className={styles.categoryItem}>
               <div className={styles.categoryIcon}>
-                <GiPill size={40} color="white" />
+                <img
+                  src="/Frame-8363.png.png"
+                  alt="capsule"
+                  className={styles.IconImage}
+                />
               </div>
               <div className={styles.categoryText}>
                 <h3>Vitamins</h3>
@@ -49,22 +50,38 @@ export default function Hero() {
 
             <div className={styles.categoryItem}>
               <div className={styles.categoryIcon}>
-                <GiWeightScale size={40} color="white" />
+                <img
+                  src="/Frame-8364.png.png"
+                  alt="weigh loss"
+                  className={styles.IconImage}
+                />
               </div>
               <div className={styles.categoryText}>
                 <h3>Weight Loss</h3>
-                <p>Find scientifically proven solutions</p>
+                <p>
+                  Weight Loss
+                  <br />
+                  Find scientifically proven solutions
+                </p>
               </div>
             </div>
 
             <div className={styles.categoryItem}>
               <div className={styles.categoryIcon}>
-                <GiCookingPot size={40} color="white" />
+                <img
+                  src="/Frame-8365.png.png"
+                  alt="Foods"
+                  className={styles.IconImage}
+                />
               </div>
 
               <div className={styles.categoryText}>
                 <h3>Functional Foods</h3>
-                <p>From protein powers to baby formula</p>
+                <p>
+                  Functional Foods
+                  <br />
+                  From protein powers to baby formula
+                </p>
               </div>
             </div>
           </div>

@@ -56,7 +56,9 @@
   margin: 0;
   line-height: 1.2;
 }
-
+.IconImage{
+  width:40px;
+}
 .exploreButton {
   background: #17414f;
   color: white;
