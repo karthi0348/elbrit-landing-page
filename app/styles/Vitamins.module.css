@@ -27,7 +27,7 @@
 .sectionLabel {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #17414F;
+  color: #17414f;
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -36,15 +36,15 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #17414F;
+  color: #17414f;
   margin-bottom: 2rem;
   line-height: 1.2;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .sectionDescription {
   font-size: 1rem;
-  color: #17414F;
+  color: #17414f;
   line-height: 1.6;
   margin-bottom: 0;
 }
@@ -67,7 +67,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   width: 400px;
   height: 265px;
-  color: #17414F;
+  color: #17414f;
   display: inline-block;
 }
 
@@ -79,10 +79,10 @@
 .mainVitaminCard {
   width: 400px;
   height: 265px;
-  color: #17414F;
+  color: #17414f;
   margin-left: auto;
   display: inline-block;
-  right: -60px; 
+  right: -60px;
 }
 
 .smallVitaminCard {
@@ -104,7 +104,7 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
   line-height: 1.3;
-  color: #17414F !important;
+  color: #17414f !important;
 }
 
 .vitaminCard h4 {
@@ -125,10 +125,10 @@
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #17414F;;
+  color: #17414f;
   text-decoration: none;
   letter-spacing: 0.5px;
-  border-bottom: 2px solid #17414F;
+  border-bottom: 2px solid #17414f;
   padding-bottom: 2px;
   transition: all 0.3s ease;
 }
@@ -161,7 +161,7 @@
 }
 
 .vitaminCard::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   right: -20px;
@@ -173,7 +173,7 @@
 }
 
 .vitaminCard::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: -15px;
@@ -190,12 +190,12 @@
     max-width: 95%;
     padding: 0 1.5rem;
   }
-  
+
   .vitaminCard {
     width: 350px;
     height: 240px;
   }
-  
+
   .mainVitaminCard {
     width: 350px;
     height: 240px;
@@ -207,37 +207,37 @@
     height: auto;
     min-height: 600px;
   }
-  
+
   .topRow {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  
+
   .headerText {
     max-width: 100%;
     text-align: center;
     padding-top: 0;
   }
-  
+
   .sectionTitle {
     white-space: normal;
     font-size: 2.2rem;
   }
-  
+
   .bottomRow {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     justify-items: center;
   }
-  
+
   .vitaminCard {
     width: 100%;
     max-width: 350px;
     height: 220px;
     display: flex;
   }
-  
+
   .mainVitaminCard {
     width: 100%;
     max-width: 350px;
@@ -246,7 +246,7 @@
     right: auto;
     display: flex;
   }
-  
+
   .smallVitaminCard:last-child {
     grid-column: 1 / -1;
     max-width: 350px;
@@ -258,26 +258,26 @@
   .vitaminsSection {
     padding: 3rem 0;
   }
-  
+
   .container {
     padding: 0 1rem;
   }
-  
+
   .sectionTitle {
     font-size: 2rem;
   }
-  
+
   .topRow {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .bottomRow {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .vitaminCard {
     width: 100%;
     max-width: none;
@@ -288,7 +288,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .mainVitaminCard {
     width: 100%;
     max-width: none;
@@ -298,42 +298,42 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .smallVitaminCard {
     flex-direction: row;
     align-items: center;
     text-align: left;
     justify-content: space-between;
   }
-  
+
   .cardContent {
     flex: 1;
     margin-right: 1rem;
   }
-  
+
   .imageContainer {
     width: 100px;
     height: 100px;
     margin: 0;
   }
-  
+
   .smallImageContainer {
     width: 80px;
     height: 80px;
     align-self: center;
     margin: 0;
   }
-  
+
   .vitaminCard h3 {
     font-size: 1.3rem;
     margin-bottom: 0.3rem;
   }
-  
+
   .vitaminCard h4 {
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
   }
-  
+
   .vitaminCard p {
     font-size: 0.9rem;
     margin-bottom: 1rem;
@@ -344,34 +344,34 @@
   .sectionTitle {
     font-size: 1.8rem;
   }
-  
+
   .vitaminCard {
     padding: 1.2rem;
     min-height: 160px;
   }
-  
+
   .imageContainer {
     width: 80px;
     height: 80px;
   }
-  
+
   .smallImageContainer {
     width: 60px;
     height: 60px;
   }
-  
+
   .vitaminCard h3 {
     font-size: 1.2rem;
   }
-  
+
   .vitaminCard h4 {
     font-size: 1rem;
   }
-  
+
   .vitaminCard p {
     font-size: 0.85rem;
   }
-  
+
   .seeMoreBtn {
     font-size: 0.75rem;
   }
@@ -381,77 +381,78 @@
   .vitaminsSection {
     padding: 2.5rem 0;
   }
-  
+
   .container {
     padding: 0 0.8rem;
   }
-  
+
   .sectionTitle {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .sectionDescription {
     font-size: 0.9rem;
   }
-  
+
   .vitaminCard {
-  border-radius: 20px;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  height: 265px;
-  color: #17414F;
-  display: inline-block;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: 265px;
+    color: #17414f;
+    display: inline-block;
   }
-  
+
   .mainVitaminCard {
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  
+
   .smallVitaminCard {
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  
+
   .cardContent {
     margin-right: 0;
     margin-bottom: 1rem;
   }
-  
+
   .imageContainer {
     width: 60px;
     height: 60px;
     margin: 0;
   }
-  
+
   .smallImageContainer {
     width: 50px;
     height: 50px;
     align-self: center;
     margin: 0;
   }
-  
+
   .vitaminCard h3 {
     font-size: 1.1rem;
     margin-bottom: 0.2rem;
   }
-  
+
   .vitaminCard h4 {
     font-size: 0.95rem;
     margin-bottom: 0.2rem;
   }
-  
+
   .vitaminCard p {
     font-size: 0.8rem;
     margin-bottom: 0.8rem;
@@ -462,55 +463,56 @@
   .sectionTitle {
     font-size: 1.4rem;
   }
-  
+
   .vitaminCard {
-     border-radius: 20px;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  height: 265px;
-  color: #17414F;
-  display: inline-block;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: 265px;
+    color: #17414f;
+    display: inline-block;
   }
-  
+
   .cardContent {
     flex: 0 1 40%;
     margin-right: 0.5rem;
   }
-  
+
   .imageContainer {
     width: 90px;
     height: 90px;
     flex: 0 0 90px;
     overflow: visible;
   }
-  
+
   .smallImageContainer {
     width: 75px;
     height: 75px;
     flex: 0 0 75px;
     overflow: visible;
   }
-  
+
   .vitaminCard h3 {
     font-size: 0.9rem;
   }
-  
+
   .vitaminCard h4 {
     font-size: 0.8rem;
   }
-  
+
   .vitaminCard p {
     font-size: 0.7rem;
     margin-bottom: 0.4rem;
     line-height: 1.1;
   }
-  
+
   .seeMoreBtn {
     font-size: 0.65rem;
   }
