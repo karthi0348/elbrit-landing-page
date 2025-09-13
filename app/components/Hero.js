@@ -1,7 +1,7 @@
 import styles from "../styles/Hero.module.css";
 import { GiPill } from "react-icons/gi";
 import { GiWeightScale } from "react-icons/gi";
-import { GiCookingPot  } from "react-icons/gi";
+import { GiCookingPot } from "react-icons/gi";
 
 export default function Hero() {
   return (
@@ -53,26 +53,18 @@ export default function Hero() {
               </div>
               <div className={styles.categoryText}>
                 <h3>Weight Loss</h3>
-                <p>
-                  Weight Loss
-                  <br />
-                  Find scientifically proven solutions
-                </p>
+                <p>Find scientifically proven solutions</p>
               </div>
             </div>
 
             <div className={styles.categoryItem}>
               <div className={styles.categoryIcon}>
-                <GiCookingPot  size={40} color="white" />
+                <GiCookingPot size={40} color="white" />
               </div>
 
               <div className={styles.categoryText}>
                 <h3>Functional Foods</h3>
-                <p>
-                  Functional Foods
-                  <br />
-                  From protein powers to baby formula
-                </p>
+                <p>From protein powers to baby formula</p>
               </div>
             </div>
           </div>
