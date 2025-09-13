@@ -52,11 +52,11 @@
 }
 
 .landscape {
-  height: 160px;
+  height: 280px;
 }
 
 .portrait {
-  height: 280px;
+  height: 160px;
 }
 
 .card1 {
