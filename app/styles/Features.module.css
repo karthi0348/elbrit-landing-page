@@ -223,7 +223,7 @@
 @media (max-width: 480px) {
   .featuresSection {
     padding: 30px 15px;
-    margin: 0px auto 30px auto;
+    margin: 0px auto 0px auto;
     border-radius: 35px;
     min-height: 450px;
     background: transparent;
@@ -240,11 +240,14 @@
   }
   
   .featureIcon {
-      width: 60px;
-    height: 60px;
-    margin: 16px auto 28px auto;
+      width: 30px;
+    height: 30px;
+    margin: 16px auto 40px auto;
   }
 
+.IconImage{
+  width:70px;
+}
 
   
   .featureIcon svg {
