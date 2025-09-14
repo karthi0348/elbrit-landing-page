@@ -1,8 +1,10 @@
 "use client"
+
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from "../styles/Features.module.css";
+import { FaFlask, FaLeaf, FaMapMarkerAlt, FaShippingFast, FaShieldAlt, FaRecycle } from "react-icons/fa";
 
 export default function Features() {
   useEffect(() => {
@@ -24,16 +26,10 @@ export default function Features() {
             data-aos-delay="100"
           >
             <div className={styles.featureIcon}>
-              <img
-                src="/a.item-icon-e.png"
-                alt="clinical"
-                className={styles.IconImage}
-              />{" "}
+              <FaFlask />
             </div>
             <h3>Clinically Studied</h3>
-            <p>
-              All products that we offer have undergone lab and safety tests
-            </p>
+            <p>All products that we offer have undergone lab and safety tests</p>
           </div>
 
           <div 
@@ -42,16 +38,10 @@ export default function Features() {
             data-aos-delay="200"
           >
             <div className={styles.featureIcon}>
-              <img
-                src="/a.item-icon-f.png"
-                alt="veg"
-                className={styles.IconImage}
-              />{" "}
+              <FaLeaf />
             </div>
             <h3>Vegetarian Friendly</h3>
-            <p>
-              We have a wide selection of vegetarian products to meet your needs
-            </p>
+            <p>We have a wide selection of vegetarian products to meet your needs</p>
           </div>
 
           <div 
@@ -60,16 +50,10 @@ export default function Features() {
             data-aos-delay="300"
           >
             <div className={styles.featureIcon}>
-              <img
-                src="/a.item-icon-g.png"
-                alt="capsule"
-                className={styles.IconImage}
-              />{" "}
+              <FaMapMarkerAlt />
             </div>
             <h3>Made In India</h3>
-            <p>
-              Shop local and explore health products made right here in India
-            </p>
+            <p>Shop local and explore health products made right here in India</p>
           </div>
 
           <div 
@@ -78,11 +62,7 @@ export default function Features() {
             data-aos-delay="400"
           >
             <div className={styles.featureIcon}>
-              <img
-                src="/a.item-icon-j.png"
-                alt="capsule"
-                className={styles.IconImage}
-              />{" "}
+              <FaShippingFast />
             </div>
             <h3>Free Shipping</h3>
             <p>We deliver to your door with no shipping costs on your orders</p>
@@ -94,16 +74,10 @@ export default function Features() {
             data-aos-delay="500"
           >
             <div className={styles.featureIcon}>
-              <img
-                src="/a.item-icon-h.png"
-                alt="capsule"
-                className={styles.IconImage}
-              />{" "}
+              <FaShieldAlt />
             </div>
             <h3>No Risk</h3>
-            <p>
-              We ensure that all products are safe and within their use-by date
-            </p>
+            <p>We ensure that all products are safe and within their use-by date</p>
           </div>
 
           <div 
@@ -112,17 +86,10 @@ export default function Features() {
             data-aos-delay="600"
           >
             <div className={styles.featureIcon}>
-              <img
-                src="/a.item-icon-i.png"
-                alt="capsule"
-                className={styles.IconImage}
-              />{" "}
+              <FaRecycle />
             </div>
             <h3>GMO Free</h3>
-            <p>
-              Natural, no modified products and derivatives for those who need
-              it
-            </p>
+            <p>Natural, no modified products and derivatives for those who need it</p>
           </div>
         </div>
       </div>

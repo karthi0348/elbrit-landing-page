@@ -1,39 +1,39 @@
 "use client"
 import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styles from "../styles/Footer.module.css";
+import { BiPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   useEffect(() => {
-    const initAOS = async () => {
-      const AOS = (await import('aos')).default;
-      await import('aos/dist/aos.css');
-      
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-    };
-
-    initAOS();
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
   }, []);
 
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.contactInfo}>
+        <div 
+          className={styles.contactInfo}
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div 
             className={styles.contactCard}
-            data-aos="fade-right"
-            data-aos-delay="200"
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
-            <div className={styles.icon}>
-              <img
-                src="/phone.png"
-                alt="phone"
-                className={styles.IconImage}
-              />{" "}
+            <div className={styles.iconContainer}>
+              <div className={styles.icon}>
+                <BiPhoneCall size={50} color="#2196f3" />
+              </div>
             </div>
 
             <div className={styles.contactDetails}>
@@ -47,12 +47,10 @@ export default function Footer() {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <div className={styles.icon}>
-              <img
-                src="/email.png"
-                alt="email"
-                className={styles.IconImage}
-              />{" "}
+            <div className={styles.iconContainer}>
+              <div className={styles.icon}>
+                <MdEmail size={50} color="#2196f3" />
+              </div>
             </div>
 
             <div className={styles.contactDetails}>
@@ -63,15 +61,13 @@ export default function Footer() {
 
           <div 
             className={styles.contactCard}
-            data-aos="fade-left"
-            data-aos-delay="600"
+            data-aos="fade-up"
+            data-aos-delay="500"
           >
-            <div className={styles.icon}>
-              <img
-                src="/location.png"
-                alt="location"
-                className={styles.IconImage}
-              />{" "}
+            <div className={styles.iconContainer}>
+              <div className={styles.icon}>
+                <FaMapMarkerAlt size={50} color="#2196f3" />
+              </div>
             </div>
 
             <div className={styles.contactDetails}>
@@ -83,8 +79,8 @@ export default function Footer() {
 
         <div 
           className={styles.companySection}
-          data-aos="zoom-in"
-          data-aos-delay="800"
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
           <div className={styles.logoContainer}>
             <div className="logoSection">
@@ -101,7 +97,7 @@ export default function Footer() {
         <div 
           className={styles.copyright}
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="700"
         >
           <p>
             © Elbrit Life Sciences Private Limited. C20, BKC, G Block, Mumbai

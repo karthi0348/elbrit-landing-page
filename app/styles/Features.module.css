@@ -61,8 +61,8 @@
   width:100px;
 }
 .featureIcon svg {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   color: #17414F;
 }
 
@@ -175,19 +175,18 @@
   }
   
   .featureIcon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 20px auto;
-    flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.95);
-    border: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 75px;
+    height: 75px;
+    margin: 16px auto 40px auto;
+  }
+
+
+
+  .featureIcon svg {
+    width: 36px;
+    height: 36px;
   }
   
-  .featureIcon svg {
-    width: 28px;
-    height: 28px;
-  }
   
   .featureCard:hover .featureIcon {
     transform: translateY(-3px);
@@ -243,19 +242,16 @@
   }
   
   .featureIcon {
-      width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     margin: 16px auto 40px auto;
   }
 
-.IconImage{
-  width:70px;
-}
 
-  
+
   .featureIcon svg {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
   
   .featureCard h3 {
@@ -291,16 +287,19 @@
     border-radius: 12px;
   }
   
-  .featureIcon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 15px auto;
+   .featureIcon {
+    width: 70px;
+    height: 70px;
+    margin: 16px auto 40px auto;
+  }
+
+
+
+  .featureIcon svg {
+    width: 32px;
+    height: 32px;
   }
   
-  .featureIcon svg {
-    width: 24px;
-    height: 24px;
-  }
   
   .featureCard h3 {
     font-size: 16px;

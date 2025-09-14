@@ -1,8 +1,12 @@
 "use client"
+
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from "../styles/Hero.module.css";
+import { GiPill } from "react-icons/gi";
+import { GiWeightScale } from "react-icons/gi";
+import { GiCookingPot } from "react-icons/gi";
 
 export default function Hero() {
   useEffect(() => {
@@ -63,11 +67,7 @@ export default function Hero() {
               data-aos-delay="800"
             >
               <div className={styles.categoryIcon}>
-                <img
-                  src="/Frame-8363.png.png"
-                  alt="capsule"
-                  className={styles.IconImage}
-                />
+                <GiPill size={40} color="white" />
               </div>
               <div className={styles.categoryText}>
                 <h3>Vitamins</h3>
@@ -85,17 +85,11 @@ export default function Hero() {
               data-aos-delay="1000"
             >
               <div className={styles.categoryIcon}>
-                <img
-                  src="/Frame-8364.png.png"
-                  alt="weigh loss"
-                  className={styles.IconImage}
-                />
+                <GiWeightScale size={40} color="white" />
               </div>
               <div className={styles.categoryText}>
                 <h3>Weight Loss</h3>
-                <p>
-                  Find scientifically proven solutions
-                </p>
+                <p>Find scientifically proven solutions</p>
               </div>
             </div>
 
@@ -105,18 +99,12 @@ export default function Hero() {
               data-aos-delay="1200"
             >
               <div className={styles.categoryIcon}>
-                <img
-                  src="/Frame-8365.png.png"
-                  alt="Foods"
-                  className={styles.IconImage}
-                />
+                <GiCookingPot size={40} color="white" />
               </div>
 
               <div className={styles.categoryText}>
                 <h3>Functional Foods</h3>
-                <p>
-                  From protein powers to baby formula
-                </p>
+                <p>From protein powers to baby formula</p>
               </div>
             </div>
           </div>
